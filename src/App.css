@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: #131218;
+  color: white;
+  font-family: "Kode Mono", monospace;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 80%;
+  max-width: 400px;
+  margin: 4rem auto;
+}
+
+.app h2 {
+  color: #767482;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* DISPLAY  */
+.display {
+  width: 100%;
+  background-color: #24232b;
+  margin: 2rem 0 1rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
+
+.display input {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: white;
+  font-family: "Kode Mono", monospace;
+  font-size: 20px;
+  caret-color: transparent;
+  cursor: default;
+
+}
+
+.display input::placeholder {
+  color: #504f57;
+  font-family: "Kode Mono", monospace;
+  font-weight: 700;
+}
+
+
+.display i {
+  margin: 1rem;
+  font-size: 20px;
+  color: #a0eaa6;
+  cursor: pointer;
+}
+
+.generator {
+  width: 100%;
+  background-color: #24232b;
+  height: auto;
+  padding: 1rem;
+}
+
+.generator .char-length {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.generator .char-length p {
+  font-size:14px;
+  font-weight: 700;
+}
+
+.generator .char-length p:nth-child(2) {
+  color: #a0eaa6;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.generator input[type="range"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.generator input[type="range"]::-webkit-slider-runnable-track {
+  height: 0.3rem;
+  width: 100%;
+}
+
+.generator input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: white;
+  height: 1rem;
+  width: 1rem;
+  border-radius: 50%;
+  margin-top: -5px;
+}
+
+.generator .check-boxes .input-box {
+  display: flex;
+  flex-flow: row-reverse;
+  justify-content: start;
+  margin: 1rem 0;
+}
+
+.generator .check-boxes .input-box label {
+  margin-left: 1rem;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.generator .check-boxes input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid white;
+  outline: none;
+}
+
+.generator .check-boxes input[type="checkbox"]:checked {
+  background-color: #a0eaa6;
+}
+
+.generator .check-boxes input[type="checkbox"]:checked::before {
+  content: "✔";
+  color: #24232b;
+  font-size: 12px;
+  font-weight: 700;
+  margin: 2px;
+} 
+
+.generator .strength {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  background-color: #131218;
+  color: #504f57;
+  padding: 1rem;
+}
+
+.generator .strength .password-strength {
+  display: flex;
+  align-items: center;
+}
+.generator .strength .strength-bars {
+  display: flex;
+}
+
+.generator .strength .strength-bars .bar {
+  width: 0.5rem;
+  height: 1.5rem;
+  border: 1px solid white;
+  margin: 0 0.2rem;
+}
+
+.generator .strength p {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.generator .strength span {
+  color: white;
+  margin: 0 1rem;
+}
+
+.generator button {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #a0eaa6;
+  border: none;
+  outline: none;
+}
