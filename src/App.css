@@ -41,6 +41,15 @@ body {
   height: 3rem;
   display: flex;
   align-items: center;
+  position: relative;
+}
+
+.display .copy {
+  position: absolute;
+  right: 0;
+  bottom: 3.5rem;
+  font-size: 12px;
+  color: rgb(49, 202, 102);
 }
 
 .display input {
@@ -202,4 +211,9 @@ body {
   background-color: #a0eaa6;
   border: none;
   outline: none;
+}
+
+.generator button:hover {
+  background-color: #7fcf9b;
+  cursor: pointer;
 }
